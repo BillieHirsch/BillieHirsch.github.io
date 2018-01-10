@@ -1,1 +1,86 @@
-Weens.Club
+
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>weens</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <style>
+            html{
+                overflow: hidden;
+            }
+        	body{
+        		margin: 0;
+        	}
+        	video{
+			    position: fixed;			    
+			    width: auto;
+			    height: 100%;
+			    z-index: -100;
+				bottom: 0;
+        		right: 0;			    
+        	}
+
+        	main{
+        		position: fixed;
+        		z-index: 1;
+        		color: white;
+        		top: 50%;
+        		left: 50%;
+                transform: translate(-50%,-50%);
+                border: 0.1rem solid white;
+                padding: 2em;
+        		mix-blend-mode: overlay;
+                text-align: center;
+        	}
+
+    		small{
+    			mix-blend-mode: overlay;
+                text-transform: uppercase;                
+                display: block;
+                font-size: 20px;
+                font-weight: 600;
+                white-space: nowrap;
+    		}    
+
+            @media screen and (min-width: 320px) {
+                font-size: 25px;
+            }
+
+            h1{
+                display: none;
+            }   	
+
+        	@media screen and (min-aspect-ratio: 16/9) {
+        		video{
+        			width: 100%;
+        			height: auto;
+        		}
+        	}
+
+        	@media screen and (max-aspect-ratio: 1/1) {
+        		video{
+        			transform: translateX(30%);	
+        		}
+        	}  	
+
+    	</style>
+    </head>
+    <body>
+
+		<video playsinline loop muted autoplay>
+			<source
+			src="beesloop.mp4"
+			type="video/mp4">
+		</video>
+
+    	<main>
+    		<h1>weens</h1>
+    		<small>coming soon</small>
+    	</main>		
+                
+    </body>
+</html>
